@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q10</title>
+<style>
+    div{
+        background-color: grey;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        padding: 9px 10px;
+    }
+    img{
+        margin-left:140px ;
+        margin-top: 20px;
+    }
+    h1{
+        text-align:center;
+    }
+    label{
+        position: relative;
+        top: 25px;
+    }
+   
+    input[type=radio]{
+        position: relative;
+        left: 10px;
+        top: 20px;
+        margin: 10px;
+    }
+    
+   input[type=text],input[type=email],input[type=number],input[type=password],select{
+     border: 4px solid blue;
+     border-radius:5px;
+     padding: 10px 15px;
+     margin-left: 80px;
+     width: 70%;
+     display:block;
+     box-sizing:border-box;
+ }
+ input[type=submit]{
+     width:95%;
+     background-color:tomato;
+     padding:10px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     display:block;
+     border:none;
+     border-radius:4px;
+ }
+input[type=submit]:hover{
+    background-color:yellow;
+    color: blueviolet;
+}
+</style>
+</head>
+<body>
+    <div>
+    <img src="SOA.png" alt="SOA" width="110px" height="100px">
+    <h1 class="row1">Registration</h1>
+<form>
+   <label for="Username"><b>UserName</b></label>
+   <input type="text" id="name" name="name" placeholder="Enter name..."><br>
+
+   <label for="Email"><b>Email</b></label>
+   <input type="email" id="Email" name="Email" placeholder="Enter Email..."><br>
+
+   <label for="Number"><b>Mobile</b></label>
+   <input type="number" id="Number" name="Number" placeholder="Enter Mobile number...">
+    
+   
+   <label for="gender" ><b>Gender</b></label>
+   <input type="radio" id="gender" name="gender"><b>Female </b>
+   <input type="radio" id="gender" name="gender"><b>Male</b><br> 
+
+   <label for="place" placeholder="Select City:"><b>City:</b></label>
+   <select id="city" name="city">
+   <option value="select" Checked>Select City:</option>
+   <option value="BBSR">Bhubaneswar</option>
+   <option value="Bombay">Mumbai</option>
+   <option value="Delhi">New-Delhi</option>
+   <option value="bengal">Kolkata</option>
+   </select><br>
+
+   <label for="password"><b>Password</b></label>
+   <input type="password" pattern ="(?=.*\d) (?=.*[A-Z]) (?=.*[a-z]).{8,}"id="col" name="col" placeholder="Enter password..."><br>
+   
+   <p style="text-align: center;"><input type="submit" value="Sign Up"></p>
+</form>
+</div>
+</body>
+</html>
+
